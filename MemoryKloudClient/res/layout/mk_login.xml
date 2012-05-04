@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/MemoryKloudTitle"
+        android:layout_marginLeft="17dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/MemoryKloudTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/logo"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/TitleMemoryKloud"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MemoryKloudTitle"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/loginUsername" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Username"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/loginPassword"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/SignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="30dp"
+        android:onClick="SignIn_Click"
+        android:text="@string/loginSignIn" />
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/loginSignUp" />
+
+</RelativeLayout>

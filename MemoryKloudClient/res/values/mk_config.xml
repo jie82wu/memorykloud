@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- This file stores all the configurable values, they are accessible from the code 
+    	e.g: R.string.IMAGE_HEIGHT;  
+    	Note: 
+    		- Jie's computer's IP: 192.168.1.145
+    		- Emulator will see localhost as 10.0.2.2
+    		- Amazon EC2 endpoint as beta.memorykloud.com
+    -->
+	<string name="IMAGE_HEIGHT">250</string>
+	<string name="URL_GET_MOMENTS_BY_KLOUDLETID">http://beta.memorykloud.com:8080/json/moment</string>
+	<string name="URL_GET_KlOUDLETS">http://beta.memorykloud.com:8080/json/kloudlet</string>
+	<string name="URL_POST_PICTURE">http://beta.memorykloud.com:8080/file</string>
+	<string name="URL_POST_KLOUDLET">http://beta.memorykloud.com:8080/kloudlet</string>
+	
+	
+</resources>

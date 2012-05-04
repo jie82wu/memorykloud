@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/kloud" />
+
+        <TextView
+            android:id="@+id/numNotifications"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/notifications"
+            android:text="6"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/MomentTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="New Moment"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/lblSelectKloudlet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/thumbnail"
+        android:layout_margin="5dp"
+        android:text="Select Kloudlet"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/spinnerkloudlet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/lblSelectKloudlet" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/spinnerkloudlet"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:hint="Leave a note?"
+        android:inputType="textMultiLine" />
+
+    <ToggleButton
+        android:id="@+id/locationOnbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/description"
+        android:layout_below="@+id/description" />
+
+    <TextView
+        android:id="@+id/context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/description"
+        android:layout_below="@+id/description"
+        android:layout_margin="5dp"
+        android:text="Location"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ShareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/context"
+        android:layout_below="@+id/locationOnbutton"
+        android:layout_margin="5dp"
+        android:layout_marginTop="50dp"
+        android:text="Share"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/flickrLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/locationOnbutton"
+        android:layout_below="@+id/locationOnbutton"
+        android:src="@drawable/flickr_logo" />
+
+    <ImageView
+        android:id="@+id/twitterLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/flickrLogo"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/flickrLogo"
+        android:src="@drawable/twitter_logo" />
+    
+     <ImageView
+        android:id="@+id/fbLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignTop="@+id/twitterLogo"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/twitterLogo"
+        android:src="@drawable/facebook_logo" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="SaveContent_Click"
+        android:text="Save" />
+
+</RelativeLayout>

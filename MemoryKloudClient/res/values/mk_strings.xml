@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="empty"></string>
+	<string name="app_name">MemoryKloud</string>
+	<string name="TitleMemoryKloud">MemoryKloud</string>
+	<string name="hintMemoryKloud">Enter event name</string>
+	<string name="loginSignIn">Sign In</string>
+	<string name="loginSignUp">Sign Up</string>
+	<string name="loginUsername">username</string>
+	<string name="loginPassword">password</string>
+	<string name="loginNewUser">New User?</string>
+	<string name="homeEventsTitle">My Events</string>
+	<string name="homeInvitesTitle">Event Invitations</string>
+	<string name="homeNewUser">
+		<u>New User?</u>
+	</string>
+	<string name="loginForgotPasswordButton">\?</string>
+
+	<string-array name="kloudletarray">
+		<item>TedX Berkeley</item>
+		<item>Candle Light Dinner</item>
+		<item>Birthday Party</item>
+		<item>Cute Dog</item>
+	</string-array>
+	<string-array name="city">
+		<item>Berkeley</item>
+		<item>Seattle</item>
+
+	</string-array>
+	<string-array name="state">
+		<item>CA</item>
+		<item>WS</item>
+	</string-array>
+</resources>
