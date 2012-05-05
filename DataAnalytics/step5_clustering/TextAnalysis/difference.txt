@@ -1,0 +1,12 @@
+#packers	0.636363636364
+#nfl	0.6
+#heathledger	0.538461538462
+#news	0.538461538462
+#pepatah	0.448275862069
+#iphone	0.428571428571
+#ipad	0.428571428571
+#mentionke	0.2
+#tcot	0.142857142857
+#artisahabat	0.111111111111
+#backintheday	-0.2
+#gop	-0.2
