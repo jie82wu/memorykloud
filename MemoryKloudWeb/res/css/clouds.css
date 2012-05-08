@@ -1,0 +1,47 @@
+
+
+#sky
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 131px;
+	overflow: hidden;
+}
+
+#cloud
+{
+	position: absolute;
+	left: 5%;
+	top: 15px;
+	z-index: 0;
+	width: 131px;
+	height: 78px;
+	background-image: url(../img/clouds/cloud1.png);
+	background-repeat: no-repeat;
+}
+
+#cloud2
+{
+	position: absolute;
+	left: 25%;
+	top: 65px;
+	z-index: 0;
+	width: 107px;
+	height: 66px;
+	background-image: url(../img/clouds/cloud2.png);
+	background-repeat: no-repeat;
+}
+
+#cloud3
+{
+	position: absolute;
+	left: 20%;
+	top: 30px;
+	z-index:0;
+	width: 78px;
+	height: 47px;
+	background-image: url(../img/clouds/cloud3.png);
+	background-repeat: no-repeat;
+}

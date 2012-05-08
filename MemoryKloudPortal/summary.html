@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<link rel="stylesheet" href="css/slider.css" type="text/css" />
+	
+	<title>MemoryKloud</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+	<script src="javascript/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+    
+</head>
+<body>
+	<div class="wrap">
+		<h1 id="logo"><image src="mkimages/logo.png" ></img>MemoryKloud</h1>
+		<ul id="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="summary.html">Summary</a></li>
+			<li><a href="documents.html">Documents</a></li>
+			<li><a href="code.html">Code/Demo</a></li>
+			<li><a href="team.html">Team</a></li>
+		</ul>
+		<p></p>
+		<div id="green_bubble">
+			<p><a href="#abstract">Abstract</a><a href="#problem">Problem</a><a href="#solution">Solution</a><a href="#process">Process</a></p>
+		</div>
+		<div id="text">
+			<h2><a name="abstract">abstract</a></h2>
+			<p>Most social media platforms such as Facebook, Twitter, Foursquare allow us to share content in a status-update fashion or what we might call byte-size formats. This gives us up-to-date information from our friends and family informing us on what is going on with their lives. However, there are two major problems with this format. First, status-update streams come in from different sources, all of which compete for user attention. Users may find it challenging to stay on top of a particular event. Secondly status updates usually come in as separate pieces of information, which users may find it difficult to differentiate their relevance and/or importance. Both of these problems cause fragmentation of the narrative, and ultimately the bigger picture of the story gets lost. This makes the Internet a one-way street. People push their precious memories to the Internet with the goal of sharing them with people, but there is no simple way to retrieve the memories back again.</p>
+			<p>These two problems are partly introduced by social media platforms because they are designed around individuals. While most memories are experienced with our family and friends, the media that these memories are shared upon focus around the person not the event. The solution we see is to flip the paradigm on its head: a social network with events in its center and individuals feeding into it, instead of an individual feeding out event memories. </p>
+			<p>An event-centric social network can be achieved with a suite of solutions we called MemoryKloud. MemoryKloud consists of a mobile application, which would sit in between users and social media platforms to record interesting moments based on events, and a web application that could potentially pull users' updates from various social platforms and auto-classify them into relevant events.</p>
+			<p>We believe MemoryKloud enhances users' experience for memory preservation. On one hand, precious moments in our lives are kept in a digital format where they are easily accessible through different devices; on the other, social interactions for a particular event is enhanced by sharing, thus making memory preservation easier and more fun.</p>
+		</div>
+		
+		<div id="text">
+			<h2><a name="problem">Problem</a></h2>
+			<p>Let's begin with a ficticious story. Imagine you attended your best friend's wedding. (Let's call her Jane). Roughly two hundred guests showed up at the wedding; beautiful flowers, lovely music, happy faces all around. You took many pictures, so did the other guests. At the end of the day, you went back home and posted those these on your favorite social media. So did other guests. </p>
+			<div class="picture">
+				<a href="mkimages/problem.png"><image src="mkimages/problem_sml.png" ></img></a>
+			</div>
+			<p>Think about it, there are two problems in this scenario.  First, different people post different memories on different web platforms. How can Jane stay on top of all these memories? We call this the "attention problem." Also, Jane's wedding memories might be posted next to news of an awful catastrophe happening somewhere in the world, or above a rather distasteful Internet meme. Jane's memories will also soon be buried by deluge of other posts from other people. This would further occult the larger picture of Jane's wedding. How can the relevant posts be put together? We call this the "relevance problem." </p>
+			<p>Both problems could potentially cause in losing precious moments already captured in a digital form. When people are interested in looking back and attempt to reminisce over special memories with special ones, they might regret that there is nothing (or too much) to resonate.</p>
+		</div>
+		
+		<div id="text">
+			<h2><a name="solution">Solution</a></h2>
+			<p>We could either place an information gateway between users and social media to capture the moments based on events before they are posted (SOLUTION A) or filter moments already posted on various social media platform into events (SOLUTION B). The end result for both ideas is to create an event based digital scrapbook where users can preserve and share.</p>
+			<div class="picture">
+			<a href="mkimages/solutionA.png"><image src="mkimages/solutionA_sml.png" ></img></a>
+			<a href="mkimages/solutionB.png"><image src="mkimages/solutionB_sml.png" ></img></a>
+			</div>
+			<p>That ultimately translates into two corresponding solutions: a mobile application which allows users to take picture on their phone and requires an event associated with that picture before they post that picture on any social media services; a web application that will at the backend pull all of users' own posts from various social media sites, and via either rule-based mechanisms or data mining techniques, it will be able to automatically assign posts to existing events. Of course, such automatic classification methods cannot guarantee a hundred percent accuracy, that's why the web application is also needed to provide capabilities allowing users to manually curate photos in case of automatic classification errors.</p>
+		</div>
+		
+		<div id="text">
+			<h2><a name="process">Process</a></h2>
+			<h3>Mobile Application</h3>
+			<p>Following is a snapshot of our design process of the Mobile Application. Detailed descriptions can be found in our report.</p>
+			<div id="container">
+				<div id="example">
+					<div id="slides">
+						<div class="slides_container">
+							<div class="slide">
+								<a href="mkimages/design1.png"><image src="mkimages/design1_sml.png" ></img></a>
+								<div class="caption" style="bottom:0">
+									<p>Understand user needs by observing their behaviors </p>
+								</div>
+							</div>
+							<div class="slide">
+								<a href="mkimages/design2.png"><image src="mkimages/design2_sml.png" ></img></a>
+								<div class="caption">
+									<p>Generate insights from observations</p>
+								</div>
+							</div>
+							<div class="slide">
+								<a href="mkimages/design3.png"><image src="mkimages/design3_sml.png" ></img></a>
+								<div class="caption">
+									<p>Create personas and make communication easier</p>
+								</div>
+							</div>
+							<div class="slide">
+								<a href="mkimages/design4.png"><image src="mkimages/design4_sml.png" ></img></a>
+								<div class="caption">
+									<p>Define common tasks users generally perform</p>
+								</div>
+							</div>
+							<div class="slide">
+								<a href="mkimages/design5.png"><image src="mkimages/design5_sml.png" ></img></a>
+								<div class="caption">
+									<p>Lo-fidelity prototyping to collect user feedback</p>
+								</div>
+							</div>
+							<div class="slide">
+								<a href="mkimages/design6.png"><image src="mkimages/design6_sml.png" ></img></a>
+								<div class="caption">
+									<p>Move paper prototypes more "real"</p>
+								</div>
+							</div>
+							<div class="slide">
+								<a href="mkimages/design7.png"><image src="mkimages/design7_sml.png" ></img></a>
+								<div class="caption">
+									<p>Build the functional prototype</p>
+								</div>
+							</div>
+							<div class="slide">
+								<a href="mkimages/design8.png"><image src="mkimages/design8_sml.png" ></img></a>
+								<div class="caption">
+									<p>Iteratively do user testing and collect user feedback.</p>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="prev"><img src="images/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+						<a href="#" class="next"><img src="images/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+					</div>
+				</div>
+			</div>
+
+			<h3>Web Application</h3>
+			<p>MemoryKloud Web's main purpose can be summarized in three points:</p>
+			<ul>
+			<li><p>* <strong>Richer Experience:</strong> One does not expect a family huddled over a mobile phone to look at last year's Christmas photos. A full-fledged website will provide MemoryKloud users a myriad of features not available for mobile technologies.</p></li>
+			<li><p>* <strong>Curation and Editing:</strong> Dragging and dropping, batch editing, batch uploading, captioning, and other editing methods can only be done through a modern desktop operating system. The importance of such techniques becomes obviously clear when employing data analysis and machine learning techniques to identify memories worth preserving (see Data Analytics Section.) </p></li>
+			<li><p>* <strong>Business Strategy:</strong> Having a linkable website is sound business strategy. In order to cut costs, many tech startups jump directly to the mobile application part and discard the web. This in our opinion is a mistake. Many underestimate the sheer power of the simple concept of linkability. This simple concept is what made the Internet what it is today. Being able to link a documents to another, or share a document with others using a simple link, are deceptively simple concepts that many tend to easily dismiss them. Path for example, the immensely popular social network, skipped the web and went directly to mobile. While there might be a business reason behind this, it ultimately frustrates users. Not being able to have quick and direct access to their own content can put many users off.</p></li>
+			</ul>
+			<div class="picture">
+			<a href="mkimages/web.png"><image src="mkimages/web_sml.png" ></img></a>
+			</div>
+			<h3>Data Analytics</h3>
+			<p>The question remains "how to group together similar moments already posted on various social media platform?" In other words, for someone's posts on different social media, can we automatically classify them into events? Generally there are two approaches for such classification problem. For one, we can define certain sets of rules. For instance, moments posted on a single day with the same group of people might be associated with a particular event; or posts with the same hash-tags are likely to be related as well. On the other hand, we can use statistical methods to do classification. In this project, we are more interested in exploring the feasibility of the statistical approach rather than delivering an optimal solution for moment classification. Also, our focus was on evaluating the classification methodology. By no means, a statistical approach can provide a 100% accurate depiction of an event. A statistical method would certainly need to have the web application mentioned above as an buttress any classification mistakes that are bound to arise.</p>
+			<p>We collected tweets data from Twitter on a single day, and applied statistical methods including Tf-idf, SVD, k-means for classifying contents by their topics. And we have the following chart for our clustering analysis.</p>
+			 <div class="picture">
+			<a href="mkimages/clustering.png"><image src="mkimages/clustering_sml.png" ></img></a>
+			</div>
+			<p>Some further text analysis has been conducted to understand the clusters:</p>
+			<ul>
+			<li><p>* <strong>Blue Cluster:</strong> It seems like that the blue cluster is a Malay cluster. Malay is a language used in Malaysia, Indonesia and Singapore. It contains the exact alphabet as English, and we were not able to filter the language out using our non-ASCII English-identification method. FYI, <a href="http://techcrunch.com/2010/02/24/twitter-languages/"> Malay consists 6% of entire tweets space. </a></p></li>
+			<li><p>* <strong>Green Cluster:</strong> The unique key words in this cluster suggest that this cluster is about a sport event. We looked up the event that day, and we found that there was indeed a NFL playoff event between Green Bay Packers and Chicago Bears. </p></li>
+			<li><p>* <strong>Red Cluster:</strong> This cluster was not yet easy to identify since there are no apparent linguistic clues to associate the given words together. We are guessing it might be some negative tweets being grouped together.</p></li>
+			</ul>
+		</div>
+		
+	</div>
+
+	<div id="footer">
+		<div class="wrap">
+			<div id="bubble">
+				<p>Jie Wu </p>
+				<p>Rami Taibah</p>
+			</div>
+			<div id="copyright">
+				<p>MemoryKloud - MIMS 2012 Final Project at School of Information, UC Berkeley</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>

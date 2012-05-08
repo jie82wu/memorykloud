@@ -1,0 +1,593 @@
+/**{
+   border: 1px solid red !important;
+}*/
+
+html{
+height:100%;
+position:absolute;
+left:50%;
+margin-left:-712px;
+white-space:nowrap;
+}
+
+
+body{
+height:100%;
+background: #cde5e8;
+font-size: 11px;
+font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+color: #333;
+line-height: 1.28;
+text-align: left;
+direction: ltr;
+padding:0px;
+margin:0px;
+white-space:nowrap
+
+
+}
+
+#header{
+height:176px;
+width:1427px;
+background: url('../img/mkheader.png') no-repeat;
+
+}
+
+h1{color:white;
+text-align:center;
+font-family: 'Almendra SC', serif;
+font-size:30px;
+}
+
+ul{
+padding:0px;
+margin:0px;
+}
+
+li{
+white-space:nowrap;
+list-style:none;
+}
+
+
+h2 {
+   position: absolute;
+   top: 65%;
+   left: 5px;
+   width: 100%;
+}
+
+
+
+/* ============================================================================================================================
+== General Settings
+** ============================================================================================================================ */
+#mainContainer{
+position:relative;
+display:inline-block;
+vertical-align: middle; 
+width:1300px;
+height:auto; 
+border:0px solid ;
+background:#172322;
+/*margin-top:110px;*/
+margin-bottom: -100px;
+white-space:nowrap;
+left:50%;
+margin-left:-650px;
+-moz-border-radius:5px 5px 0px 0px;
+-webkit-border-radius:5px 5px 0px 0px;
+-o-border-radius:5px 5px 0px 0px;
+
+
+}
+
+
+
+#mainTimeline{
+width:83%;
+height:100%;
+min-height:600px;
+position:relative;
+border:0px solid ;
+background:white;
+float:right;
+white-space:nowrap;
+margin-right:4px;
+margin-top:4px;
+padding:0px;
+-moz-border-radius:5px 5px 0px 0px;
+-webkit-border-radius:5px 5px 0px 0px;
+-o-border-radius:5px 5px 0px 0px;
+
+
+
+}
+
+#kloudletTitleContainer{
+background:url('../img/graduation.png') no-repeat;
+text-align:left;
+height:179px;
+
+vertical-align:middle;
+min-height: 100px;
+position:relative;
+
+display:block;
+margin-bottom:50px;
+-moz-border-radius:5px 5px 0px 0px;
+-webkit-border-radius:5px 5px 0px 0px;
+-o-border-radius:5px 5px 0px 0px;
+
+
+}
+
+
+#kloudletTitle{
+   height:20px;
+   position:relative;
+   width:300px;
+   top:138px;	
+   color: white;
+   font: bold 20px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.6);
+   padding: 10px;
+-moz-border-radius:0px 5px 0px 0px;
+-webkit-border-radius:0px 5px 0px 0px;
+-o-border-radius:0px 5px 0px 0px;
+
+}
+
+
+
+h2 span {
+   color: white;
+   font: bold 15px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+.mklogo{ margin-left:180px; position:absolute; top:15px;}
+.mklogo p{margin-left:130px; position:absolute; top:-30px;font-family:'Poiret One', cursive;font-size:55px; color:#172322;font-weight:bold;min-width:500px;}
+
+/* ============================================================================================================================
+== SIDEBAR
+** ============================================================================================================================ */
+
+#navbar{
+position:relative;
+top:180px;
+height:100%;
+float:left;
+color:white;
+margin:0px;
+white-space:nowrap;
+}
+
+#navbar ul{
+position:relative;
+left:10%;
+top:3%;
+font-size:12px;
+float:left;
+white-space:nowrap;
+
+}
+
+#navbar ul li {
+white-space:nowrap;
+padding:4px;
+
+}
+
+#navbar ul li:hover {
+background:white;
+
+}
+
+#navbar ul li a{
+text-decoration:none;
+color:#518fed;
+
+}
+
+#navbar ul li a:hover {
+color:#c27ce3;
+cursor:pointer;
+
+}
+
+
+
+
+/* ============================================================================================================================
+== TOP MENU
+** ============================================================================================================================ */
+      
+        /* menu */
+        #menu{  margin:0px; padding:0px; list-style:none; color:#fff; line-height:45px; display:inline-block; float:left; z-index:1000; }
+
+        #menu a { color:#fff; text-decoration:none; }
+        #menu > li {background:#172322 none repeat scroll 0 0; cursor:pointer; float:left; position:relative;padding:0px 10px;}
+        #menu > li a:hover {color:#c27ce3;}
+        #menu .logo {background:transparent none repeat scroll 0% 0%; padding:0px; background-color:Transparent;}
+        /* sub-menus*/
+        #menu ul { padding:0px; margin:0px; display:block; display:inline;z-index:9999;}
+        #menu li ul { position:absolute; left:-10px; top:0px; margin-top:45px; width:150px; line-height:16px; background-color:#172322; color:#0395CC; /* for IE */ display:none; }
+        #menu li:hover ul { display:block;}
+        #menu li ul li{ display:block; margin:5px 20px; padding: 5px 0px;  border-top: dotted 1px #606060; list-style-type:none; z-index:9999; }
+        #menu li ul li:first-child { border-top: none;  }
+        
+        
+        /* main submenu */
+        #menu #main { left:0px; top:-20px; padding-top:20px; background-color:#7cb7e3; color:#fff; z-index:999;}
+        /* search */
+        .searchContainer div { background-color:#fff; display:inline; padding:5px;}
+        .searchContainer input[type="text"] {border:none;}
+        .searchContainer img { vertical-align:middle;}
+        /* corners*/
+        #menu .corner_inset_left { position:absolute; top:0px; left:-12px;}
+        #menu .corner_inset_right { position:absolute; top:0px; left:150px;}
+        #menu .last { background:transparent none repeat scroll 0% 0%; margin:0px; padding:0px; border:none; position:relative; border:none; height:0px;}
+        #menu .corner_left { position:absolute; left:0px; top:0px;}
+        #menu .corner_right { position:absolute; left:132px; top:0px;}
+        #menu .middle { position:absolute; left:18px; height: 20px; width: 115px; top:0px; z-index:9999;}
+
+
+
+
+
+
+
+/* ============================================================================================================================
+== MOMENT GENERAL SETTINGS
+** ============================================================================================================================ */
+ 
+.objectContainer{
+width:400px;
+height:auto;
+padding-bottom:4px;
+position:relative;
+background-color:#ffffff;
+border:2px solid #afafaf;
+background: white;
+min-height:60px;
+text-align:justify;
+margin: 10px;
+color:#333;
+z-index:2;
+-moz-border-radius:5px 5px 0px 0px;
+-webkit-border-radius:5px 5px 0px 0px;
+-o-border-radius:5px 5px 0px 0px;
+}
+
+.objectContainer:nth-child(odd){
+float:right;
+}
+
+.objectContainer:nth-child(even){
+float:left;
+}
+
+.momentContainer{
+position:relative;
+display:block;
+width:520px;
+height:auto;
+padding:1px;
+margin:2px 2px 2px 2px;
+float:left;
+clear:left;
+
+}
+
+.momentContainer:nth-child(odd){
+float:right;
+clear:right;
+}
+
+.momentContainer:nth-child(even){
+float:left;
+clear:left;
+}
+
+
+/* creates the larger circle for moments on the left */
+.momentContainer:nth-child(even):before {
+	content:""; 
+	position:absolute; 
+	z-index:10; 
+	top:15px; 
+	right:70px; 
+	width:20px; 
+	height:20px;
+	border:2px solid #afafaf;
+	background:#fff;
+	/* css3 */
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px;
+	border-radius:50px;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+}
+
+/* creates the smaller circle for moments on the left*/
+.momentContainer:nth-child(even):after {
+	content:""; 
+	position:absolute; 
+	z-index:10; 
+	top:40px; 
+	right:60px; 
+	width:8px; 
+	height:8px; 
+	border:2px solid #afafaf;
+	background:#fff;
+	/* css3 */
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	border-radius:25px;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+}
+
+
+/* creates the larger circle for moments on the right*/
+.momentContainer:nth-child(odd):before {
+	content:""; 
+	position:absolute; 
+	z-index:10; 
+	top:15px; 
+	left:25px; 
+	width:20px; 
+	height:20px;
+	border:2px solid #afafaf;
+	background:#fff;
+	/* css3 */
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px;
+	border-radius:50px;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+}
+
+/* creates the smaller circle for moments on the right*/
+.momentContainer:nth-child(odd):after {
+	content:""; 
+	position:absolute; 
+	z-index:10; 
+	top:40px; 
+	left:17px; 
+	width:8px; 
+	height:8px; 
+	border:2px solid #afafaf;
+	background:#fff;
+	/* css3 */
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	border-radius:25px;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+}
+
+
+
+
+/* ============================================================================================================================
+== AVATAR SETTINGS
+** ============================================================================================================================ */
+
+
+
+.Avatar{border: 2px solid #afafaf;}
+.Avatar, div.momentContainer  img.Avatar{
+position:relative;
+width: 48px;
+height: 48px;
+-webkit-border-radius: 5px; /* Saf3+, Chrome */
+border-radius: 5px; /* Opera 10.5, IE 9 */
+-moz-border-radius: 5px; /*Disabled for FF1+ */
+}
+
+.Avatar, div.momentContainer:nth-child(odd)  img.Avatar{
+float:left;
+left:-20px;
+top:55px;
+}
+
+.Avatar, div.momentContainer:nth-child(even)  img.Avatar{
+float:right;
+top:55px;
+right:-10px;
+}
+
+
+
+
+
+/* ============================================================================================================================
+== MOMENT HEADER
+** ============================================================================================================================ */
+
+
+.KloudletUnitActor a{
+cursor: pointer;
+color: #174040;
+text-decoration: none;
+font-weight: bold;
+position:absolute;
+top:8px;
+left:0px;
+}
+a:hover{
+text-decoration: underline;
+}
+.KloudletUnitActor span{
+color: gray;
+margin-left:10px;
+text-decoration: none;
+font-weight: bold;
+font-size:10px;
+position:absolute;
+top:24px;
+left:0px;
+}
+
+.KloudletUnitActor {
+
+padding:5px 5px 5px 5px;
+margin: 2px 10px 2px 10px;
+zoom: 1;
+position: relative;
+height:10px;
+
+}
+.objectContainer:hover >.KloudletUnitActor .KloudletSelectorButton, .KloudletUnitContainer:hover>.KloudletUnitActor .KloudletSelectorButton{
+opacity:1;
+}
+.objectContainer:hover{
+border-color: #c27ce3;
+}
+.photoWrap, .objectContainer{
+width: 400px;
+}
+
+.photoWrap{
+padding:0px;
+}
+
+/*Image size*/
+.photoWrap img{
+width: 390px;
+margin: 20px 10px 10px 4px;
+}
+
+
+
+/*Video Frame Size*/
+iframe{
+margin-left:4px;
+width:390px;
+}
+
+
+
+
+
+
+
+
+
+/* ============================================================================================================================
+== CAPTIONS AND COMMENTS
+** ============================================================================================================================ */
+
+
+
+
+ /* ============================================================================================================================
+== STAR + SHARE
+** ============================================================================================================================ */
+
+
+
+.KloudletSelectorButton{
+width:64px;
+position:absolute;
+top:10px;
+right:0px;
+opacity:0;
+}
+.KloudletSelectorButton div{
+width:30px;
+background:#f5f6f7;
+border:0px solid #a9aaab;
+float:left;
+}
+
+.KloudletSelectorButton div:nth-child(1){
+-webkit-border-top-left-radius: 2px;
+-webkit-border-bottom-left-radius: 2px;
+-moz-border-radius-topleft: 2px;
+-moz-border-radius-bottomleft: 2px;
+border-top-left-radius: 2px;
+border-bottom-left-radius: 2px;
+border-right:none;
+border-bottom-width:0px;
+height:24px;
+background:url(../img/no-star.png) no-repeat;
+}
+
+.KloudletSelectorButton div:nth-child(2){
+-webkit-border-top-right-radius: 2px;
+-webkit-border-bottom-right-radius: 2px;
+-moz-border-radius-topright: 2px;
+-moz-border-radius-bottomright: 2px;
+border-top-right-radius: 2px;
+border-bottom-right-radius: 2px;
+height:25px;
+background:url(../img/share.png) no-repeat;
+}
+
+strong{
+width:104px;
+height:37px;
+cursor: pointer;
+color: #3B5998;
+padding: 6px 10px;}
+
+a#star {border: 0; }
+a#star:visited img, a#star:active img { background-image: url(../img/star.png); }
+
+
+
+
+
+
+ /* ============================================================================================================================
+== FOOTER
+** ============================================================================================================================ */
+
+.clearfooter {
+height:100px;
+clear: both;
+}
+
+#footer{
+height: 120px;
+width:1300px;
+position: relative;
+background-color:black;
+border-top:5px black ;
+left:50%;
+margin-left:-650px;
+/*max-width:100%;*/
+}
+
+
+ /* ============================================================================================================================
+== SPINNER
+** ============================================================================================================================ */
+
+.spinner {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -50px; /* half width of the spinner gif */
+	margin-top: -50px; /* half height of the spinner gif */
+	text-align:center;
+	z-index:1234;
+	
+	width: 100px; /* width of the spinner gif */
+	height: 102px; /*hight of the spinner gif +2px to fix IE8 issue */
+}
+
+
+
+
+
+
