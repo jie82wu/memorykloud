@@ -25,10 +25,19 @@
 		<div id="text">
 			<h2><a name="mobileappdemo">Mobile App Demo</a></h2>
 			<p>The following video demonstrates how our mobile application functions and what we would think an ideal way for helping people preserve precious moments in their lives.</p>
+			<div class="picture">
+			<iframe align="center" src="http://player.vimeo.com/video/41753226" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			</div>
 		</div>
+		
 		<div id="text">
 			<h2><a name="sourcecode">Source Code</a></h2>
-			<p>All our code are available for download at Github.</p>
+			<p>All our source code are available for download at Github: {<a href="https://github.com/jie82wu/memorykloud">source</a>}.</p>
+			<li><p><strong>Data Analytics:</strong>This package includes all the neccessarily Python code for pre-processing the text corpus such as generating tf-idf matrices. We were using <a href="http://www.nltk.org/">NLTK</a> to help us do some NLP analysis. The package also includes R scripts for SVD, k-means and SVM computation.</p></li>
+			<li><p><strong>MemoryKloudClient:</strong>This package includes all the neccessary components in our MemoryKloud Android application. This mobile application will need  MemoryKloudServer service running to function since all the interactions with the applications will be saved into our back-end database. We used an open-source <a href="https://github.com/siyamed/android-satellite-menu"> satellite library</a> to generate the menu satellite effects. </p></li>
+			<li><p><strong>MemoryKloudPortal:</strong>The package stores the pieces that build our portal for introducing our MemoryKloud project. 
+			<li><p><strong>MemoryKloudServer:</strong>This package includes a <a href="http://docs.python.org/library/simplehttpserver.html">SimpleHttpServer</a>-powered Python server RESTful APIs are provided to both MemoryKloudClient and MemoryKloudWeb. Database objects are rendered in both HTML and JSON formats.</p></li>
+			<li><p><strong>MemoryKloudWeb:</strong>The package serves as a prototype of what our web component looks like.</p></li>
 		</div>
 	</div>
 
