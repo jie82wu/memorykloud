@@ -1,0 +1,9 @@
+MIMS 2012 Final Project
+School of Information, UC Berkeley
+Jie Wu & Rami Taibah
+
+* Data Analytics: This package includes all the neccessarily Python code for pre-processing the text corpus such as generating tf-idf matrices. We were using NLTK to help us do some NLP analysis. The package also includes R scripts for SVD, k-means and SVM computation.
+* MemoryKloudClient: This package includes all the neccessary components in our MemoryKloud Android application. This mobile application will need  MemoryKloudServer service running to function since all the interactions with the applications will be saved into our back-end database. We used an open-source satellite library to generate the menu satellite effects. 
+* MemoryKloudPortal: The package stores the pieces that build our portal for introducing our MemoryKloud project. 
+* MemoryKloudServer: This package includes a SimpleHttpServer-powered Python server RESTful APIs are provided to both MemoryKloudClient and MemoryKloudWeb. Database objects are rendered in both HTML and JSON formats.
+* MemoryKloudWeb: The package serves as a prototype of what our web component looks like.
